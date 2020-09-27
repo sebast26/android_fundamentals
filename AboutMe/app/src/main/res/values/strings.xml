@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">About Me</string>
-    <string name="name">Sebastian G.</string>
     <string name="yellow_star">Yellow star</string>
     <string name="bioText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A culpa dolore eligendi eos, et, facilis harum maxime minus mollitia pariatur quis reprehenderit saepe! Architecto commodi, iusto molestiae quasi tenetur vero.\n  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor est mollitia rem rerum? Dignissimos harum incidunt pariatur quasi quidem quisquam voluptate. Doloribus dolorum facere laudantium libero minus repudiandae! Debitis, quas? \n  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam debitis deleniti dolorum ducimus error exercitationem facere, laudantium magnam molestias nemo nihil omnis quam quidem quis sequi sint sit soluta. \n Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, autem beatae deserunt enim, eos error ipsum minima necessitatibus nihil pariatur porro provident quam repellendus velit vitae voluptas voluptate voluptatibus. Quam! </string>
     <string name="what_is_your_nickname">What is your Nickname?</string>

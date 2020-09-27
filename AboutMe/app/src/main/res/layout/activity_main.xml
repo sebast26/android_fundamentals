@@ -4,6 +4,9 @@
 
     <data>
 
+        <variable
+            name="myName"
+            type="me.sgorecki.aboutme.MyName" />
     </data>
 
     <LinearLayout
@@ -18,7 +21,7 @@
             style="@style/NameStype"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/name"
+            android:text="@={myName.name}"
             android:textAlignment="center" />
 
         <EditText
@@ -45,6 +48,7 @@
             style="@style/NameStype"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="@={myName.nickname}"
             android:textAlignment="center"
             android:visibility="gone" />
 
