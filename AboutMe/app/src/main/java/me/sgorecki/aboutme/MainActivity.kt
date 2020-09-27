@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import androidx.appcompat.app.AppCompatActivity
+import androidx.databinding.DataBindingUtil
 import me.sgorecki.aboutme.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -13,7 +14,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         val view = binding.root
 
         binding.doneButton.setOnClickListener { addNickname(it) }
@@ -25,6 +26,7 @@ class MainActivity : AppCompatActivity() {
         val nickNameEdit = binding.nickname
         val nickNameText = binding.nicknameText
         nickNameText.text = nickNameEdit.text
+        binding.invalidateAll()
 
         nickNameEdit.visibility = View.GONE
         view.visibility = View.GONE
