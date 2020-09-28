@@ -15,7 +15,17 @@ class MainActivity : AppCompatActivity() {
 
     private fun setListeners() {
         val boxes =
-            listOf(boxOneText, boxTwoText, boxThreeText, boxFourText, boxFiveText, constraintLayout)
+            listOf(
+                boxOneText,
+                boxTwoText,
+                boxThreeText,
+                boxFourText,
+                boxFiveText,
+                constraintLayout,
+                redButton,
+                yellowButton,
+                greenButton
+            )
         boxes.forEach { it.setOnClickListener { makeColored(it) } }
     }
 
@@ -30,6 +40,11 @@ class MainActivity : AppCompatActivity() {
             R.id.boxThreeText -> view.setBackgroundResource(android.R.color.holo_green_light)
             R.id.boxFourText -> view.setBackgroundResource(android.R.color.holo_green_dark)
             R.id.boxFiveText -> view.setBackgroundResource(android.R.color.holo_green_light)
+
+            // Boxes using custom colors for background
+            R.id.redButton -> boxThreeText.setBackgroundResource(R.color.my_red)
+            R.id.yellowButton -> boxFourText.setBackgroundResource(R.color.my_yellow)
+            R.id.greenButton -> boxFiveText.setBackgroundResource(R.color.my_green)
 
             else -> view.setBackgroundColor(Color.LTGRAY)
         }
