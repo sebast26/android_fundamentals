@@ -22,8 +22,8 @@
         android:id="@+id/uploadButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
         android:text="@string/upload"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -33,8 +33,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
         android:text="@string/discard"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/uploadButton"
         app:layout_constraintEnd_toStartOf="@+id/uploadButton" />
+
+    <TextView
+        android:id="@+id/cameraLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/camera"
+        app:layout_constraintBaseline_toBaselineOf="@+id/cameraType"
+        tools:layout_editor_absoluteX="31dp" />
+
+    <EditText
+        android:id="@+id/cameraType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/camera_value"
+        tools:layout_editor_absoluteX="169dp"
+        tools:layout_editor_absoluteY="394dp" />
 </android.support.constraint.ConstraintLayout>
